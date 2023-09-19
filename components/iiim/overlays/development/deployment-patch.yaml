@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: iiim
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-rmui-tenant/byoc-app-unht/iiim@sha256:9135c73dedec798a042f03cead3e9596e793f5931c3b0b54a95d2592e0275c70
+        name: my-java-quarkus
+        resources: {}
+status: {}
